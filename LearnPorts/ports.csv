@@ -12,5 +12,5 @@
 "465";"SMTP + SSL + TLS";"2"
 "587";"SMTP + STARTTLS";"2"
 "993";"IMAP + SSL + TLS";"1"
-"995";"POP3S";"2"
+"995";"POP3 + SSL + TLS";"2"
 "3389";"RDP";"2"
