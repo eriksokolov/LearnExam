@@ -1,0 +1,2 @@
+ip;subnet;cidr;first_usable;last_usable;broadcast;subnet_size;
+172.25.64.1;255.255.240.0;/20;172.25.64.1;172.25.79.254;172.25.79.255;4094;

@@ -2,13 +2,22 @@ $ImportCsv = (Import-csv .\ports.csv -Delimiter ";")
 $min = $Importcsv | Sort-Object Points | Select-Object -First 1
 $i =  $ImportCSV.IndexOf($min)
 
+
 $Port = $ImportCsv[$i].Port
-$Port
+$Port_Title = [PSCustomObject]@{
+  Port = $Port
+}
+$Port_Title |
+  Format-Table
 
 $ReadHost = Read-Host
 
 $Protocol = $ImportCSv[$i].Protocol
-$Protocol
+$Protocol_Title = [PSCustomObject]@{
+  Protocol = $Protocol
+}
+$Protocol_Title |
+  Format-Table
 
 $input = (Read-Host "1 if correct")
 
